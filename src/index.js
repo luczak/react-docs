@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BoilingCalculator } from "./boiling-calculator/calclulator.js";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function renderApp() {
+    const app = (
+        <StrictMode>
+            <BoilingCalculator />
+        </StrictMode>
+    );
+    const root = document.getElementById('root');
+    ReactDOM.render(app, root);
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+renderApp();
 reportWebVitals();
