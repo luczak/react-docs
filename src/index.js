@@ -2,12 +2,13 @@ import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BoilingCalculator } from "./boiling-calculator/calclulator.js";
+import { FilterableProductTable } from "./filterable-product-table/filterable-product-table.js";
+import { productsMock } from "./data/products-mock.js";
 
 function renderApp() {
     const app = (
         <StrictMode>
-            <BoilingCalculator />
+            <FilterableProductTable products={productsMock}/>
         </StrictMode>
     );
     const root = document.getElementById('root');

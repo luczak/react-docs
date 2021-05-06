@@ -1,0 +1,20 @@
+.filterable-product-table {
+    margin: 30px;
+}
+
+.search-bar {
+    margin-bottom: 10px;
+}
+
+.table-column {
+    display: inline-block;
+    min-width: 100px;
+}
+
+.empty-product {
+    color: red;
+}
+
+input {
+    margin-bottom: 15px;
+}
